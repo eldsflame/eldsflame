@@ -15,6 +15,7 @@
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
     
     
+    
     <script type="application/ld+json">{
 		"@context": "http://schema.org",
 		"@type": "Organization",
@@ -61,12 +62,17 @@
       <div class="u-clearfix u-sheet u-sheet-1">
         <h2 class="u-align-center u-text u-text-1">Navigation<br>
         </h2>
-        <p class="u-text u-text-2">For project 6 we needed a navigation mesh for the player and the enemys becorse it was a diablo style game.<br>So i started and builded out my dijkstra algorithm i made for a school assignment by making it take triangles instead of a 2d grid and it was a good start becorse it had a lot of visual feedback, the green is walkeble,blue is unwalkeble , pink is start and end and red is the path.<br>So i started by making it take triangles and made it know its three neigbors, after that i started doing the harder part and added funneling using the <a href="http://digestingduck.blogspot.com/2010/03/simple-stupid-funnel-algorithm.html" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1">Simple Stupid Funnel Algorithm</a>&nbsp;and then i have my navmesh system.<br>After that i made it fit in into our engine and changed the djikstra to an A*.<br>How we created the navmesh was exporting it from unity as it was the program our level desingers where using and unity allows the navmesh to be exported.&nbsp;<br>
-          <br>For project 7 i wanted to expand it and not use A* if it was not behind an obsticle so i expanded it to use line intersection to se if the player was in a straight line infront of the enemy if not it will still use the A* method. and to make the path straight when using A*.<br>I took all walk points and see if i can walk from one of the points to the one after the one its able to walk to it and i remove all the unnecessary path points. An other inportant i added was dynamic line witch blocked of doors so enemys did not walk trough them.
+        <p class="u-text u-text-2">For project 6 we needed some type of way to move around in the world so our solution was a navigation mesh for the player and the enemies for our diablo3 inspired game.<br>So i started and builded out my dijkstra algorithm i made for a school assignment by making it take triangles instead of a 2d grid and it was a good start because it had a lot of visual feedback, the green is walkable,blue is unwalkable&nbsp;, pink is start and end and red is the path.<br>So i started by making it take triangles and made it know its three neigbors, after that i started doing the harder part and added funneling using the <a href="http://digestingduck.blogspot.com/2010/03/simple-stupid-funnel-algorithm.html" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1">Simple Stupid Funnel Algorithm</a>&nbsp;and then i have my navmesh system.<br>After that i made it fit in into our engine and changed the djikstra to an A*.<br>How we created the navmesh was exporting it from unity as it was the program our level desingers were using and unity allows the navmesh to be exported.&nbsp;<br>
+          <br>For project 7 i wanted to expand it and not use A* if it was not behind an obstacle so i expanded it to use line intersection to se if the player was in a straight line infront of the enemy if not it will still use the A* method. and to make the path straight when using A*.<br>I took all walk points and see if i can walk from one of the points to the one after the one its able to walk to it and i remove all the unnecessary path points. An other inportant i added was dynamic line witch blocked of doors so enemies did not walk trough them.
         </p>
         <img src="images/Djikstra.png" alt="" class="u-image u-image-default u-image-1" data-image-width="1082" data-image-height="1080">
         <img src="images/navmesh.png" alt="" class="u-image u-image-default u-image-2" data-image-width="1078" data-image-height="1080">
         <p class="u-text u-text-3">The red triagles are all the triangles it have to pass, the black triangles are non walkeble, white is the start, dark gray is the end and the green is the path</p>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-2" id="sec-85bb">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <img src="images/navmesh.gif" alt="" class="u-absolute-hcenter u-expanded-height u-image u-image-default u-image-1" data-image-width="1099" data-image-height="956">
       </div>
     </section>
     
