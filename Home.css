@@ -16,7 +16,7 @@
 }
 
 .u-section-1 .u-text-1 {
-  margin: 0 121px 0 0;
+  margin: 0 104px 0 0;
 }
 
 .u-section-1 .u-image-1 {
@@ -26,11 +26,11 @@
 }
 
 .u-section-1 .u-text-2 {
-  margin: 0 331px 0 0;
+  margin: 0 310px 0 0;
 }
 
 .u-section-1 .u-text-3 {
-  margin: 0 108px 0 52px;
+  margin: 0 104px 0 56px;
 }
 
 .u-section-1 .u-btn-1 {
@@ -43,11 +43,11 @@
 }
 
 .u-section-1 .u-text-5 {
-  margin: 0 335px 0 0;
+  margin: 0 319px 0 0;
 }
 
 .u-section-1 .u-text-6 {
-  margin: -23px 193px 0 88px;
+  margin: -24px 160px 0 96px;
 }
 
 .u-section-1 .u-btn-2 {
@@ -55,7 +55,7 @@
 }
 
 .u-section-1 .u-text-7 {
-  margin: 128px 211px 0 0;
+  margin: 129px 211px 0 0;
 }
 
 .u-section-1 .u-btn-3 {
@@ -83,11 +83,11 @@
 }
 
 .u-section-1 .u-text-10 {
-  margin: 1px 279px 0 2px;
+  margin: 0 277px 0 4px;
 }
 
 .u-section-1 .u-text-11 {
-  margin: 9px 357px 0 1px;
+  margin: 10px 357px 0 1px;
 }
 
 .u-section-1 .u-btn-5 {
@@ -96,7 +96,7 @@
 }
 
 .u-section-1 .u-text-12 {
-  margin: 5px 281px 0 0;
+  margin: 5px 238px 0 0;
 }
 
 .u-section-1 .u-btn-6 {
@@ -125,7 +125,7 @@
 }
 
 .u-section-1 .u-text-14 {
-  margin: 1px 279px 0 2px;
+  margin: 1px 238px 0 2px;
 }
 
 .u-section-1 .u-btn-11 {
@@ -137,7 +137,7 @@
 }
 
 .u-section-1 .u-text-15 {
-  margin: -58px 277px 0 4px;
+  margin: -33px 277px 0 4px;
 }
 
 @media (max-width: 1199px) {
@@ -154,15 +154,16 @@
   }
 
   .u-section-1 .u-text-1 {
-    margin-right: 38px;
+    margin-right: 21px;
   }
 
   .u-section-1 .u-text-2 {
-    margin-right: 248px;
+    margin-right: 227px;
   }
 
   .u-section-1 .u-text-3 {
-    margin-right: 66px;
+    margin-right: 63px;
+    margin-left: 52px;
   }
 
   .u-section-1 .u-text-4 {
@@ -170,12 +171,13 @@
   }
 
   .u-section-1 .u-text-5 {
-    margin-right: 252px;
+    margin-right: 236px;
   }
 
   .u-section-1 .u-text-6 {
-    margin-right: 151px;
-    margin-left: 46px;
+    margin-top: 20px;
+    margin-right: 252px;
+    margin-left: 0;
   }
 
   .u-section-1 .u-text-7 {
@@ -188,40 +190,46 @@
   }
 
   .u-section-1 .u-layout-cell-2 {
-    min-height: 707px;
+    min-height: 732px;
   }
 
   .u-section-1 .u-text-9 {
-    margin-top: -38px;
+    width: auto;
     margin-right: 272px;
     margin-left: 0;
   }
 
   .u-section-1 .u-text-10 {
+    width: auto;
     margin-right: 164px;
     margin-left: 0;
   }
 
   .u-section-1 .u-text-11 {
+    width: auto;
     margin-right: 241px;
     margin-left: 0;
   }
 
   .u-section-1 .u-text-12 {
-    margin-right: 164px;
+    width: auto;
+    margin-right: 121px;
   }
 
   .u-section-1 .u-text-13 {
+    width: auto;
     margin-right: 348px;
     margin-left: 0;
   }
 
   .u-section-1 .u-text-14 {
-    margin-right: 164px;
+    width: auto;
+    margin-right: 123px;
     margin-left: 0;
   }
 
   .u-section-1 .u-text-15 {
+    width: auto;
     margin-right: 164px;
     margin-left: 0;
   }
@@ -241,7 +249,7 @@
   }
 
   .u-section-1 .u-text-2 {
-    margin-right: 156px;
+    margin-right: 135px;
   }
 
   .u-section-1 .u-text-3 {
@@ -253,21 +261,21 @@
   }
 
   .u-section-1 .u-text-5 {
-    margin-right: 160px;
+    margin-right: 144px;
   }
 
   .u-section-1 .u-text-6 {
-    margin-right: 105px;
-    margin-left: 0;
+    margin-right: 160px;
+    margin-left: 8px;
   }
 
   .u-section-1 .u-text-7 {
-    margin-top: 128px;
-    margin-right: 36px;
+    margin-top: 129px;
+    margin-right: 160px;
   }
 
   .u-section-1 .u-text-8 {
-    margin-right: 36px;
+    margin-right: 160px;
   }
 
   .u-section-1 .u-layout-cell-2 {
@@ -291,7 +299,7 @@
   }
 
   .u-section-1 .u-text-12 {
-    margin-right: 39px;
+    margin-right: 0;
   }
 
   .u-section-1 .u-text-13 {
@@ -299,7 +307,7 @@
   }
 
   .u-section-1 .u-text-14 {
-    margin-right: 39px;
+    margin-right: 0;
   }
 
   .u-section-1 .u-text-15 {
@@ -328,6 +336,11 @@
     margin-left: 52px;
   }
 
+  .u-section-1 .u-text-6 {
+    margin-top: -24px;
+    margin-right: 72px;
+  }
+
   .u-section-1 .u-text-7 {
     margin-right: 0;
     margin-left: 52px;
@@ -354,6 +367,7 @@
   }
 
   .u-section-1 .u-text-6 {
+    margin-left: 0;
     margin-right: 0;
   }
 
@@ -369,16 +383,8 @@
     margin-right: 0;
   }
 
-  .u-section-1 .u-text-12 {
-    margin-right: 0;
-  }
-
   .u-section-1 .u-text-13 {
     margin-right: 23px;
-  }
-
-  .u-section-1 .u-text-14 {
-    margin-right: 0;
   }
 
   .u-section-1 .u-text-15 {
