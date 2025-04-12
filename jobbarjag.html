@@ -1,0 +1,17 @@
+const h = new Date().getHours();
+const dp = [
+  {text: "morning", bg: "cyan"},      // From 07 to 10
+  {text: "day",     bg: "orange"},    // From 12 to 14
+  {text: "night",   bg: "magenta"},   // From 17 to 03
+  {text: "",        bg: "none"},      // All other hours
+][
+  h >=  7 && h < 10 ? 0 :
+  h >= 12 && h < 14 ? 1 :
+  h >= 17 && h <  3 ? 2 :
+                      3
+];
+
+const EL_dayPeriod = document.querySelector("#dayPeriod");
+EL_dayPeriod.textContent      = dp.text; 
+EL_dayPeriod.style.background = dp.bg;
+<span id="dayPeriod"></span>
