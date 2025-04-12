@@ -1,32 +1,36 @@
-var Now = new Date();
-var CurrentDay = Now.getDay();
 
-
-getWeeksNum: function(year, month) {
-    var daysNum = 32 - new Date(year, month, 32).getDate(),
-        fDayO = new Date(year, month, 1).getDay(),
-        fDay = fDayO ? (fDayO - 1) : 6,
-        weeksNum = Math.ceil((daysNum + fDay) / 7);
-    return weeksNum;
-}
-
-
-
-
-
-<div id="test">
 <script>
-document.getElementById("display").innerHTML = getWeeksNum(2025,4);
+Date.prototype.getWeek = function() {
+  var onejan = new Date(this.getFullYear(),0,1);
+  var today = new Date(this.getFullYear(),this.getMonth(),this.getDate());
+  var dayOfYear = ((today - onejan + 86400000)/86400000);
+  return Math.ceil(dayOfYear/7)
+};
+
+var today = new Date();
+var currentWeekNumber = today.getWeek();
+const result = currentWeekNumber % 2; // 0
+console.log(currentWeekNumber);
+
 </script>
-</div>
 
-
-
+<!DOCTYPE html>
 <html>
 <body>
-<p id="display"></p>
+
+
 <script>
-   document.getElementById("display").innerHTML = Now;
+document.write(currentWeekNumber);
+
+if(currentWeekNumber % 2 == 0) {
+    document.write("Onsdag Torsdag");
+}
+
+// if the number is odd
+else {
+    document.write("Mondag Tisdag Fredag Lördag Söndag");
+}
 </script>
+
 </body>
 </html>
