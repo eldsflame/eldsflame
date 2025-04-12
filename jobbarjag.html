@@ -1,19 +1,31 @@
-const h = new Date().getHours();
-const dp = [
-  {text: "morning", bg: "cyan"},      // From 07 to 10
-  {text: "day",     bg: "orange"},    // From 12 to 14
-  {text: "night",   bg: "magenta"},   // From 17 to 03
-  {text: "",        bg: "none"},      // All other hours
-][
-  h >=  7 && h < 10 ? 0 :
-  h >= 12 && h < 14 ? 1 :
-  h >= 17 && h <  3 ? 2 :
-                      3
-];
-
-const EL_dayPeriod = document.querySelector("#dayPeriod");
-EL_dayPeriod.textContent      = dp.text; 
-EL_dayPeriod.style.background = dp.bg;
-<span id="dayPeriod"></span>
-
-<div id="day-text"></div>
+var Now = new Date();
+var CurrentDay = Now.getDay();
+if (CurrentDay !== 1) {
+  $('#del_fri').toggle();
+} else if (CurrentDay !== 2) {
+  $('#del_fri').toggle();
+} else if (CurrentDay !== 3) {
+  $('#del_fri').toggle();
+} else if (CurrentDay !== 4) {
+  $('#del_fri').toggle();
+} else if (CurrentDay !== 5) {
+  $('#del_mon').toggle();
+} else if (CurrentDay !== 6) {
+  $('#del_mon').toggle();
+} else if (CurrentDay !== 7) {
+  $('#del_mon').toggle();
+}
+#del_mon,
+#del_fri,
+#del_tom {
+  display: none;
+}
+<div id="del_mon">
+  <h4>Order today for delivery on Monday.</h4>
+</div>
+<div id="del_fri">
+  <h4>Order today for delivery on Friday</h4>
+</div>
+<div id="del_tom">
+  <h4>Order by 12pm today for delivery tomorrow!</h4>
+</div>
