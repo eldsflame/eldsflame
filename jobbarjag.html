@@ -1,25 +1,5 @@
 var Now = new Date();
 var CurrentDay = Now.getDay();
-if (CurrentDay !== 1) {
-  $('#del_fri').toggle();
-} else if (CurrentDay !== 2) {
-  $('#del_fri').toggle();20:30 2025-04-1220:30 2025-04-12
-} else if (CurrentDay !== 3) {
-  $('#del_fri').toggle();
-} else if (CurrentDay !== 4) {
-  $('#del_fri').toggle();
-} else if (CurrentDay !== 5) {
-  $('#del_mon').toggle();
-} else if (CurrentDay !== 6) {
-  $('#del_mon').toggle();
-} else if (CurrentDay !== 7) {
-  $('#del_mon').toggle();
-}
-#del_mon,
-#del_fri,
-#del_tom {
-  display: none;
-}
 
 
 getWeeksNum: function(year, month) {
@@ -45,6 +25,6 @@ getWeeksNum: function(year, month) {
 </div>
 <div id="test">
 <script>
-document.getElementById("display").innerHTML = getWeeksNum;
+document.getElementById("display").innerHTML = getWeeksNum(2025,4);
 </script>
 </div>
