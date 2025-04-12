@@ -1,10 +1,9 @@
-<<<<<<< HEAD
 var Now = new Date();
 var CurrentDay = Now.getDay();
 if (CurrentDay !== 1) {
   $('#del_fri').toggle();
 } else if (CurrentDay !== 2) {
-  $('#del_fri').toggle();
+  $('#del_fri').toggle();20:30 2025-04-1220:30 2025-04-12
 } else if (CurrentDay !== 3) {
   $('#del_fri').toggle();
 } else if (CurrentDay !== 4) {
@@ -47,22 +46,3 @@ getWeeksNum: function(year, month) {
 <div id="test">
 getWeeksNum
 </div>
-=======
-const h = new Date().getHours();
-const dp = [
-  {text: "morning", bg: "cyan"},      // From 07 to 10
-  {text: "day",     bg: "orange"},    // From 12 to 14
-  {text: "night",   bg: "magenta"},   // From 17 to 03
-  {text: "",        bg: "none"},      // All other hours
-][
-  h >=  7 && h < 10 ? 0 :
-  h >= 12 && h < 14 ? 1 :
-  h >= 17 && h <  3 ? 2 :
-                      3
-];
-
-const EL_dayPeriod = document.querySelector("#dayPeriod");
-EL_dayPeriod.textContent      = dp.text; 
-EL_dayPeriod.style.background = dp.bg;
-<span id="dayPeriod"></span>
->>>>>>> 3a5062de4d0911df68b48ae0ce5defdbc87225b5
