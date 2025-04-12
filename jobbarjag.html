@@ -20,6 +20,20 @@ if (CurrentDay !== 1) {
 #del_tom {
   display: none;
 }
+
+
+getWeeksNum: function(year, month) {
+    var daysNum = 32 - new Date(year, month, 32).getDate(),
+        fDayO = new Date(year, month, 1).getDay(),
+        fDay = fDayO ? (fDayO - 1) : 6,
+        weeksNum = Math.ceil((daysNum + fDay) / 7);
+    return weeksNum;
+}
+
+
+
+
+
 <div id="del_mon">
   <h4>Order today for delivery on Monday.</h4>
 </div>
@@ -28,4 +42,7 @@ if (CurrentDay !== 1) {
 </div>
 <div id="del_tom">
   <h4>Order by 12pm today for delivery tomorrow!</h4>
+</div>
+<div id="test">
+getWeeksNum
 </div>
